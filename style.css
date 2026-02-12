@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    overflow: hidden;
+}
+
+/* Main Card */
+.container {
+    background: #ffffff;
+    padding: 60px 70px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    width: 520px;
+    max-width: 90%;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 35px;
+    color: #ff4d6d;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+/* Buttons Wrapper */
+.buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    height: 80px; /* movement area */
+}
+
+/* Common Button Style */
+button {
+    padding: 12px 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+/* YES Button */
+.yes {
+    background-color: #ff4d6d;
+    color: white;
+    box-shadow: 0 10px 20px rgba(255, 77, 109, 0.3);
+}
+
+.yes:hover {
+    transform: scale(1.1);
+}
+
+/* NO Button */
+.no {
+    background-color: #f1f1f1;
+    color: #ff4d6d;
+    position: relative; /* important: not absolute initially */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-5px, 5px); }
+    40% { transform: translate(5px, -5px); }
+    60% { transform: translate(-5px, -5px); }
+    80% { transform: translate(5px, 5px); }
+    100% { transform: translate(0, 0); }
+}
+
+.shake {
+    animation: shake 0.4s ease;
+}
+
+/* Floating Hearts Background */
+body::before {
+    content: "💖 💕 💗 💓 💞 💘";
+    position: absolute;
+    font-size: 40px;
+    opacity: 0.15;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    animation: floatHearts 20s linear infinite;
+}
+
+@keyframes floatHearts {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-120vh);
+    }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 40px 25px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}

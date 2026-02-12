@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gift 2 💖</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #f8cdda, #f7a1b5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Georgia', serif;
+      text-align: center;
+    }
+
+    .container {
+      background: #f3c3cc;
+      padding: 40px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #5a1f2b;
+      margin-bottom: 20px;
+    }
+
+    .hidden-message {
+      display: none;
+      margin-top: 20px;
+      color: #5a1f2b;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      margin-top: 20px;
+      background: red;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: darkred;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Open Me Slowly 💕</h1>
+
+    <button class="btn" onclick="showMessage()">Tap to Reveal</button>
+
+    <div class="hidden-message" id="message">
+      You are not just someone special…  
+      You are my comfort, my peace, my favorite notification 🥺💖  
+
+      <br><br>
+
+      you are the bestest thing in the universe,  
+      kese mil gya tu mujhe 😌❤️
+    </div>
+
+    <button class="btn" onclick="window.location.href='gift.html'">
+      ← Back to Gifts
+    </button>
+  </div>
+
+<script>
+  function showMessage() {
+    document.getElementById("message").style.display = "block";
+  }
+</script>
+
+</body>
+</html>

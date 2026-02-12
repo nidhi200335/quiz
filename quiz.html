@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz for You 😌</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #e8aab5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Georgia', serif;
+    }
+
+    .quiz-container {
+      text-align: center;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #5a1f2b;
+      margin-bottom: 30px;
+    }
+
+    .quiz-box {
+      background: #f3c3cc;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .quiz-box h3 {
+      color: #5a1f2b;
+      margin-bottom: 20px;
+    }
+
+    .option {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 12px;
+      background: white;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .option:hover {
+      background: #ffdce3;
+      transform: scale(1.03);
+    }
+
+    .progress {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #5a1f2b;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      background: red;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h1>Quiz for you 😌</h1>
+
+    <div class="quiz-box">
+      <h3>Who is the absolute 'Boss' in this relationship? 🥺</h3>
+
+      <button class="option" onclick="checkAnswer('you')">
+        Obviously You
+      </button>
+
+      <button class="option" onclick="checkAnswer('me')">
+        Me
+      </button>
+
+
+      <div class="progress">Question 1 of 3</div>
+    </div>
+
+    <button class="back-btn" onclick="window.location.href='gift.html'">
+      ← Back
+    </button>
+  </div>
+
+<script>
+  function checkAnswer(answer) {
+    if (answer === "you") {
+      window.location.href = "quiz2.html";
+    } else {
+      alert("Wrong answer 😏 Try again.");
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background:  #f7a1b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+}
+
+.main-box {
+  background: linear-gradient(135deg, #ff8fa3, #ffb3c6);
+  padding: 40px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #5a1f2b;
+  margin-bottom: 30px;
+}
+
+.gift-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.gift-card {
+  background: #f3c3cc;
+  padding: 25px;
+  border-radius: 15px;
+  width: 30%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gift-card:hover {
+  transform: scale(1.08);
+}
+
+.gift-card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.gift-card p {
+  margin: 0;
+  font-weight: bold;
+  color: #5a1f2b;
+}
+
+.message-box {
+  margin-top: 30px;
+  font-size: 20px;
+  color: white;
+  min-height: 40px;
+}
+
+.final-btn {
+  margin-top: 25px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.final-btn:hover {
+  background: darkred;
+}
